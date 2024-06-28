@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Practice Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <header>
+        <div class="logo">Test Practice Site</div>
+        <nav>
+            <ul>
+                <li><a href="#act">ACT Practice</a></li>
+                <li><a href="#sat">SAT Practice</a></li>
+                <li><a href="#est1">EST1 Practice</a></li>
+                <li><a href="#est2">EST2 Practice</a></li>
+                <li><a href="#login">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="introduction">
+            <h1>Welcome to Your Test Practice Site</h1>
+            <p>The best place to prepare for ACT, SAT, and EST exams!</p>
+        </section>
+        <section class="practice-sections">
+            <div id="act">
+                <h2>ACT Practice</h2>
+                <p>Full-length tests, practice questions, and more.</p>
+            </div>
+            <div id="sat">
+                <h2>SAT Practice</h2>
+                <p>Prepare with comprehensive practice materials.</p>
+            </div>
+            <div id="est1">
+                <h2>EST1 Practice</h2>
+                <p>Practice for EST1 with math and English sections.</p>
+            </div>
+            <div id="est2">
+                <h2>EST2 Practice</h2>
+                <p>Choose from Math 1, Biology, Chemistry, or Physics.</p>
+            </div>
+        </section>
+        <section class="login-register" id="login">
+            <h2>Login / Register</h2>
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='register.html'">Register</button>
+        </section>
+    </main>
+    <footer>
+        <p>Resources | Support | Social Media Links</p>
+    </footer>
+
+    <!-- User Dashboard -->
+    <header class="dashboard-header">
+        <div class="logo">Test Practice Site</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#act">ACT Practice</a></li>
+                <li><a href="#sat">SAT Practice</a></li>
+                <li><a href="#est1">EST1 Practice</a></li>
+                <li><a href="#est2">EST2 Practice</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="dashboard">
+        <section class="welcome-message">
+            <h1>Welcome, [Username]!</h1>
+            <div class="quick-links">
+                <button onclick="location.href='new_test.html'">Start New Test</button>
+                <button onclick="location.href='progress.html'">View Progress</button>
+            </div>
+        </section>
+        <section class="progress-tracker">
+            <h2>Progress Tracker</h2>
+            <!-- Graphical representation of test scores (Use a chart library like Chart.js) -->
+            <div id="chart"></div>
+        </section>
+        <section class="saved-tests">
+            <h2>Saved Tests</h2>
+            <ul>
+                <li>
+                    Test: ACT Math | Date: 2024-06-20 | Score: 30
+                    <button>Retake</button>
+                    <button>Review</button>
+                </li>
+                <li>
+                    Test: SAT Reading | Date: 2024-06-22 | Score: 680
+                    <button>Retake</button>
+                    <button>Review</button>
+                </li>
+            </ul>
+        </section>
+        <section class="profile-settings">
+            <h2>Profile Settings</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Update</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
